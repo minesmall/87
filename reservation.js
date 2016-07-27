@@ -48,7 +48,7 @@ app.get('/api/createDataPoint',function(request,response){
  				subject: '一起趣玩-共遊跟車系統認證信',
  				text: '親愛的用戶您好:歡迎您成為一起趣玩-共遊跟車系統的會員！\n請輸入以下驗證碼:'+ randomstring
  			};
-			transporter.sendMail(options,function(error, info){
+			transporter.sendmail(options,function(error, info){
 			    if(error){
 			        console.log(error);
 			    }else{
